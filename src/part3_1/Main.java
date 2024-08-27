@@ -17,7 +17,7 @@ public class Main {
         library.addBook(bookD);
 
         //제거
-        library.deleteBook(bookD);
+        library.deleteBook(bookC);
 
         // 모든 책 출력
         library.showAllBook();
@@ -25,8 +25,8 @@ public class Main {
         // 책 대여
         library.borrowBook(bookA);
 
-        // 책 반납
-
+        // 책 반납f
+        bookC.setIsAvailable(false);
 
 
     }

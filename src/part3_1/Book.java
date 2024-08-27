@@ -12,7 +12,7 @@ public class Book {
         this.isAvailable = isAvailable;
     }
 
-    public String bookNameCheck() {
+    public String bookNameCheck() { // 책 제목 조회
 
         return title;
     }
@@ -22,7 +22,15 @@ public class Book {
         return true;
     }
 
+    public boolean getisAvailable() {
 
+        return isAvailable;
+    }
+
+    public void setIsAvailable(boolean a) { // 설정
+        this.isAvailable = a;
+
+    }
 
 
 
