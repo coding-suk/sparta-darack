@@ -12,7 +12,7 @@ public class Book {
         this.isAvailable = isAvailable;
     }
 
-    public String getTitle() { // 책 제목 조회
+    public String getBook() { // 책 제목 조회
         return title;
     }
 
@@ -25,11 +25,12 @@ public class Book {
         // set은 필드에 변경할 값을 전달 받아서 필드 값을 변경하는 메소드.
     }
 
-    public void detailImfor() { // 상세 정보 출력 (출력 메소드 -> print)
+    // 책 상세정보 출력
+    public void detailImfor() {
+        // 상세 정보 출력 (출력 메소드 -> print)
         // 위의 변수 값을 갖고 와서 출력을 해야하는 건지,,
-        // 매개 변수를 선언해서 받아서 출력을 해야하는가,, x
-        System.out.println("책의 제목 " + title + "  책의 저자: " + author );
-        //
+        // 매개 변수를 선언해서 받아서 출력을 해야하는가,x
+        System.out.println("책의 제목: " + title + "책의 저자: " + author);
     }
 
 }
