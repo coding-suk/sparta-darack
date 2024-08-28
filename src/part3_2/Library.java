@@ -23,7 +23,7 @@ public class Library {
     //책 이름으로 검색
     public Book searchBookName(Book volumn) {
         for(Book bo : books) {
-            if(bo.equals(volumn.getTitle())) {
+            if(bo.equals(volumn.getBook())) {
                 volumn.detailImfor();
                 return bo;
             }
@@ -43,7 +43,7 @@ public class Library {
     public Book rentBook(Book title) {
 
         for(Book bo : books) {
-            if(title.equals(bo.getTitle())){
+            if(title.equals(bo.getBook())){
                 bo.setIsAvailable(false);
                 return bo;
             } else {

@@ -45,11 +45,12 @@ public class Library {
     // 밑으로 수정 필요
     // 책 대여
     public Book rentBook(Book book) {
-        for(Book books : bookArr) {
-            if (books.equals(book.getTitle())) {
+        String bt1 = book.getTitle();
+        for(Book book1 : bookArr) {
+            if (bt1.equals(book1.getTitle())) { // 객체랑 문자열을 비교한 케이스
                 System.out.println("대여가 되었습니다");
                 book.setIsAvailable(false);
-                return books;
+                return book1;
             } else {
                 System.out.println("대여가 실패했습니다");
             }
